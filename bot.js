@@ -50,26 +50,25 @@ bot.onText(/\/start/, async (msg) => {
     await delay(3000); 
     
     const menuText = `
-Hello, This is ${me.username ? `@${me.username}` : `[${me.first_name}](tg://user?id=${me.id})`}, Bot Telegram UltramenUbot v1.0
+Hello, This is ${me.username ? `@${me.username}` : `[${me.first_name}](tg://user?id=${me.id})`},  Let me introduce myself, I am a Telegram bot that is ready to help you, I was created by someone named The Developer03
 
-- I N F O F I T U R
-• /installpanel (V20)
-• /installpanelv2 (V22/24)
-• /wingsstart
+╭───❏ ᴍʏ sᴇʀᴠɪᴄᴇs ❏───⊷
+│⏤͟͟͞͞★•/installpanel (V20)
+│⏤͟͟͞͞★ /installpanelv2 (V22/24)
+│⏤͟͟͞͞★ /wingsstart
+╰━━━━━━━━━━━━━━━━*
 
 Developer : <a href='${url}'>sacatechincbot</a>
-TestiDeveloper : <a href='https://whatsapp.com/channel/0029VahIMBs5kg7Eu2Dhtw1y'>𝗠𝗬 𝗧𝗘𝗦𝗧𝗜</a>
-Room Public : <a href='https://chat.whatsapp.com/KKszwKfksZd8Ks48mTK8M8'>𝗠𝗬 𝗥𝗢𝗢𝗠</a>
 `;
 
     const keyboard = {
         reply_markup: {
             inline_keyboard: [
-                [{ text: 'TestiMoni', url: 'https://t.me/testimonifahrioffic' }, { text: 'Owner', url: 'https://t.me/sacatechincbot' }]
+                [{ text: 'Whatsapp', url: 'https://whatsapp.com/channel/0029Va7qmJ4LNSa4HAXqg10u' }, { text: 'Owner', url: 'https://t.me/sacatechincbot' }]
             ]
         }
     };
-    const imageUrl = 'https://img100.pixhost.to/images/843/542248152_skyzopedia.jpg';
+    const imageUrl = 'https://i.imghippo.com/files/qk8997bx.png';
     await bot.sendPhoto(chatId, imageUrl, {
         caption: menuText,
         parse_mode: 'HTML',
